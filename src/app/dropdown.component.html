@@ -1,0 +1,12 @@
+
+<div style="margin:15px;width:400px;">
+  <div class="dropdown-list">
+    <span [className]="titleclass" (click)="toggle()">{{prefix}} {{selected?.title}}</span>
+    <ul [className]="listclass">
+      <li *ngFor="let movie of movies" (click)="select(movie)">
+        <span>{{movie.title}}</span>
+      </li>
+    </ul>
+    <span [className]="clearclass" (click)="clear()">Clear</span>
+  </div>
+</div>
