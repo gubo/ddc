@@ -5,7 +5,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule,HTTP_INTERCEPTORS } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import { DropdownModule } from 'primeng/dropdown';
 
 import { Oops } from './oops.service';
 import { API } from './api.service';
@@ -22,8 +21,7 @@ import { DropDownComponent } from './dropdown.component';
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    FormsModule,
-    DropdownModule
+    FormsModule
   ],
   providers: [
     Oops,
